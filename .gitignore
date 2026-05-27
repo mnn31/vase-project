@@ -1,0 +1,24 @@
+.DS_Store
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+
+# Word lock files
+~$*.docx
+
+# Heavy debug overlays (regeneratable)
+photogrammetry/output/debug/
+synthesis/output/debug/
+
+# Build artifact from build_axisym_usdz.py (the .usdz is what we ship)
+photogrammetry/output/vase_axisym.usda
+
+# HTML/PDF build artifacts (regenerable from .md sources)
+*.html
+final-ultramethod/draft1-vase-project.pdf
+final-ultramethod/setup_and_calculations.pdf
+anish-work/draft1-vase-project.pdf
+anish-work/vase_writeup.pdf
+anish-work/method_comparison.pdf
+anish-work/error_analysis_starter.pdf

@@ -1,0 +1,44 @@
+{
+  "method": "MAV-QV \u2014 Mesh-Anchored Volumetry with Quadrature Verification (hand-coded outer profile anchored to 3 tape circumferences + 98 caliper readings angularly + inner-floor dome + rolled rim + 4 quadrature cross-checks)",
+  "inputs": {
+    "C_base_cm": 41.1,
+    "C_widest_cm": 60.0,
+    "C_rim_cm": 47.0,
+    "H_exterior_cm": 18.0,
+    "z_floor_center_cm": 1.8,
+    "z_floor_edge_cm": 1.1,
+    "inner_dome_rise_cm": 0.7,
+    "t_rim_peak_cm": 1.3,
+    "n_wall_readings": 98,
+    "n_theta": 72,
+    "N_disk": 10000,
+    "N_grid_z": 1000
+  },
+  "geometry": {
+    "h_belly_cm": 7.0,
+    "R_dome_edge_cm": 6.195297067901235,
+    "V_dome_cm3": 42.20288969625177
+  },
+  "volumes_cm3": {
+    "V1_disk": 2952.8395419704257,
+    "V2_cross_section": 2952.8963533231567,
+    "V3_divergence_theorem": 2948.040485726549,
+    "V4_frustum_raw": 2946.104835786992,
+    "mean": 2949.970304201781,
+    "spread": 6.79151753616452,
+    "stdev": 3.4380388909375608
+  },
+  "volumes_L": {
+    "V1_disk": 2.952839541970426,
+    "V2_cross_section": 2.952896353323157,
+    "V3_divergence_theorem": 2.948040485726549,
+    "V4_frustum_raw_sanity_check": 2.946104835786992,
+    "mesh_based_mean_V1_V2_V3": 2.9512587936733774,
+    "final_3sig": 2.95
+  },
+  "comparisons": {
+    "manan_photogrammetry_L": 3.279,
+    "partner_avg_L": 3.012,
+    "mav_qv_L": 2.949970304201781
+  }
+}
